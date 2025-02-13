@@ -1,6 +1,10 @@
 {
     "version": 2,
     "builds": [
+        "commands": [
+          "npm install pg",
+          "npm run build"
+        ]
       {
         "src": "server.js",
         "use": "@vercel/node"
