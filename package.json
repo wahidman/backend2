@@ -9,7 +9,7 @@
     "pg-hstore": "^2.3.4",
     "postgres": "^3.4.5",
     "sequelize": "^6.37.5"
-  }
+  },
   "scripts": {
     "start": "npm install pg && node server.js"
   }
