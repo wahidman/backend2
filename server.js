@@ -10,6 +10,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
+try {
+  require.resolve('pg');
+  console.log('pg is installed and resolved successfully.');
+} catch (err) {
+  console.error('pg is not installed:', err.message);
+  process.exit(1);
+}
 
 // Koneksi ke PostgreSQL
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
