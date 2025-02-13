@@ -8,9 +8,6 @@
     "pg": "^8.13.3",
     "pg-hstore": "^2.3.4",
     "postgres": "^3.4.5",
-    "sequelize": "^6.37.5",
-    "sequelize-auto": "^0.5.4",
-    "sequelize-cli": "^6.6.2",
-    "sequelize-typescript": "2.1.6"
+    "sequelize": "^6.37.5"
   }
 }
